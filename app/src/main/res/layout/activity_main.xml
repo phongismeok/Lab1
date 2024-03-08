@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/firebase_logo_shot"
+        android:layout_marginBottom="10dp">
+    </ImageView>
+
+    <Button
+        android:id="@+id/loginemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="LOGIN WITH EMAIL"
+        android:padding="10dp"
+        android:drawableStart="@drawable/mail"
+        android:background="@drawable/button2"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/loginsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/phone"
+        android:padding="10dp"
+        android:text="LOGIN WITH NUMBER PHONE"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/txtqmk"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản" />
+
+        <TextView
+            android:id="@+id/txtdk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="đăng ký ngay"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
